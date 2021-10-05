@@ -26,9 +26,10 @@ body {
 .main-section {
     width: calc(100% - 250px);
     /* debugging */
-    background-color: cadetblue;
+    background-color: #141922;
 }
 
+/* fixed bar for upgrade */
 .upgrade {
     height: 100px;
     width: calc(100% - 250px);
@@ -46,15 +47,55 @@ body {
     display: inline-block;
     white-space: nowrap;
     width: fit-content;
-    padding: 10px 30px;
-    margin: 31.80px 0;
+    padding: 1% 5%;
+    margin: 2.2% 0;
     border: 1px solid white;
     border-radius: 20px;
 }
 
 .upgrade>span:hover {
     font-size: 0.8rem;
-    margin: 31.40px 0;
+}
+
+/* main contents */
+.main-contents {
+    margin-top: 100px;
+}
+
+/* spotify sections */
+.spotify-sections {
+    width: 80%;
+    margin: 8.5% auto;
+}
+
+.spotify-sections>ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.spotify-sections ul li {
+    list-style-type: none;
+}
+
+.spotify-sections ul li a {
+    text-decoration: none;
+    color: #6d7075;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 5%;
+    white-space: nowrap;
+}
+
+/* rules for selected section */
+#selected::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 35%;
+    margin: 5px auto;
+    background-color: #90d32c;
 }
 
 /* player */
