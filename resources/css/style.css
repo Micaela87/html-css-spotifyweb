@@ -1,5 +1,32 @@
+/* general rules */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+/* side navbar */
+.navbar {
+    width: 250px;
+    /* debugging */
+    background-color: azure;
+}
+
+/* main section */
+.main-section {
+    width: calc(100% - 250px);
+    /* debugging */
+    background-color: cadetblue;
+}
+
+/* player */
+.player {
+    height: 100px;
+    /* debugging */
+    background-color: cornflowerblue;
 }
