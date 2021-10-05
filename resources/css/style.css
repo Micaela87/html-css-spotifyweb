@@ -68,6 +68,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
+    padding: 2% 0;
 }
 
 /* spotify sections */
@@ -109,27 +110,27 @@ body {
 /* recently played */
 .music {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.albums {
-    width: calc(100% / 6);
+.col {
+    width: calc(90% / 6);
     text-align: center;
 }
 
-.albums img {
+.col img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 180px;
 }
 
-.albums span {
+.col span {
     display: block;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     padding: 2%;
+    width: 100%;
 }
 
 .title {
@@ -141,6 +142,30 @@ body {
 .subtitle {
     color: #696b70;
     font-size: 0.8rem;
+}
+
+/* hover on col */
+.layer {
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.play {
+    color: white;
+    font-size: 2rem;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 41%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col:hover .play {
+    display: block;
 }
 
 /* player */
