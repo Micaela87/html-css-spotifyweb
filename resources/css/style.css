@@ -57,15 +57,23 @@ body {
     font-size: 0.8rem;
 }
 
+/* DESKTOP VERSION */
 /* main contents */
 .main-contents {
-    margin-top: 100px;
+    width: 95%;
+    margin: 100px auto 0 auto;
+}
+
+.main-contents h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
 }
 
 /* spotify sections */
 .spotify-sections {
-    width: 80%;
-    margin: 8.5% auto;
+    width: 70%;
+    margin: 8.5% auto 2% auto;
 }
 
 .spotify-sections>ul {
@@ -96,6 +104,43 @@ body {
     width: 35%;
     margin: 5px auto;
     background-color: #90d32c;
+}
+
+/* recently played */
+.music {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.albums {
+    width: calc(100% / 6);
+    text-align: center;
+}
+
+.albums img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.albums span {
+    display: block;
+    white-space: nowrap;
+    padding: 2%;
+}
+
+.title {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #696b70;
+    font-size: 0.8rem;
 }
 
 /* player */
