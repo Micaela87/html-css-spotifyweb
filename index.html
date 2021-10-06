@@ -48,8 +48,7 @@
                 <div class="fixed-container">
                     <div class="align-content">
                         <div class="app">
-                            <img src="./resources/img/download.svg" alt="download app">
-                            <span>Installa app</span>
+                            <a href=""><img src="./resources/img/download.svg" alt="download app">Installa app</a>
                         </div>
                         <div class="profile">
                             <img src="./resources/img/profile.svg" alt="user profile">
@@ -218,7 +217,44 @@
     </div>
     <!-- player -->
     <div class="player">
-
+        <!-- song currently playing -->
+        <div class="currently-playing">
+            <img src="./resources/img/sinister.jpeg" alt="Sinister currently playing">
+            <div class="song-details">
+                <span class="title">Sinister</span>
+                <span class="subtitle">Brano nome</span>
+            </div>
+            <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </div>
+        <!-- player with controls and progress bar -->
+        <div class="player-controls">
+            <div class="controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle" id="play-icon"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="progress-bar">
+                <span>0.25</span>
+                <div id="bar">
+                    <div><i class="fas fa-circle circle"></i></div>
+                </div>
+                <span>4.35</span>
+            </div>
+        </div>
+        <!-- list, full-screen and volume bar -->
+        <div class="other-controls">
+            <i class="fas fa-th-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div id="bar">
+                <div><i class="fas fa-circle circle"></i></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

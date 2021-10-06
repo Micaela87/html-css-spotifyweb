@@ -123,17 +123,21 @@ body {
 }
 
 .app {
-    color:rgb(102, 102, 102);
-    font-size: 0.9rem;
     padding: 3% 0;
     border-bottom: 1px solid rgb(102, 102, 102);
 }
 
-.app img {
+.app a img {
     width: 7%;
     height: auto;
     vertical-align: middle;
     margin-right: 2%;
+}
+
+.app a {
+    text-decoration: none;
+    color:rgb(102, 102, 102);
+    font-size: 0.9rem;
 }
 
 .profile {
@@ -149,6 +153,11 @@ body {
     background-color: rgb(102, 102, 102);
     border-radius: 50%;
     margin-right: 2%;
+}
+
+/* hover on app a */
+.app a:hover {
+    color: white;
 }
 
 /* main section */
@@ -328,6 +337,114 @@ body {
 /* player */
 .player {
     height: 100px;
-    /* debugging */
-    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282828;
+}
+
+.player>div {
+    height: 100px;
+}
+
+/* currently-playing */
+.currently-playing {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.currently-playing img {
+    width: 15%;
+    height: auto;
+    margin: 3.5%;
+}
+
+.currently-playing .song-details {
+    margin-right: 9%;
+}
+
+.currently-playing span {
+    display: block;
+}
+
+.currently-playing .icon {
+    color:rgb(102, 102, 102);
+    font-size: 0.7rem;
+    margin: 5%;
+}
+
+/* player-controls */
+.player-controls {
+    width: 50%;
+}
+
+/* player-controls controls */
+.controls {
+    width: 50%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#play-icon {
+    display: block;
+    font-size: 2rem;
+    padding: 0 2%;
+}
+
+/* player-controls progress-bar */
+.progress-bar {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center; 
+}
+
+.progress-bar span {
+    color: white;
+    font-size: 0.7rem;
+}
+
+#bar {
+    width: 60%;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+
+#bar>div {
+    width: 25%;
+    height: 5px;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.circle {
+    color: white;
+    display: none;
+}
+
+/* hover on progress-bar */
+#bar>div:hover {
+    background-color: #90d32c;
+}
+
+#bar>div:hover .circle {
+    display: block;
+}
+
+/* other controls */
+.other-controls {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 0.7rem;
 }
