@@ -89,6 +89,7 @@ body {
 
 .new-playlist div {
     overflow: auto;
+    max-height: calc(50vh - 71px)
 }
 
 .new-playlist div ul {
@@ -120,6 +121,7 @@ body {
     bottom: 100px;
     left: 0;
     z-index: 1;
+    background-color: #000;
 }
 
 .app {
@@ -321,6 +323,10 @@ body {
     display: block;
 }
 
+.col:hover {
+    cursor: pointer;
+}
+
 /* playlist for user */
 .random-playlist {
     margin-top: 2%;
@@ -337,10 +343,15 @@ body {
 /* player */
 .player {
     height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .player>div {
