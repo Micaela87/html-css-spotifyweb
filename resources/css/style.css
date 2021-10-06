@@ -21,26 +21,27 @@ body {
     background-color: #000;
 }
 
+.align-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .navbar #logo {
     width: 60%;
     margin: 3% 5%;
 }
 
+/* sections-navbar */
 .sections-navbar ul {
     list-style-type: none;
-    margin: 2% 15%;
+    margin: 2% 10.5%;
 }
 
 .sections-navbar ul li a {
-    color: #666;
+    color: rgb(102, 102, 102);
     font-weight: bold;
     font-size: 0.9rem;
     text-decoration: none;
-}
-
-/* hover on sections-navbar */
-.sections-navbar ul li a:hover {
-    color: white;
 }
 
 /* icons for sections-navbar list */
@@ -58,6 +59,56 @@ body {
 
 .sections-navbar #library {
     list-style-image: url('../img/libreria.svg');
+}
+
+/* new-playlist */
+.new-playlist {
+    font-weight: bold;
+}
+
+.new-playlist h3 {
+    color: white;
+    font-size: 1rem;
+    padding: 5% 0;
+}
+
+.new-playlist span a {
+    color: rgb(102, 102, 102);
+    font-size: 0.9rem;
+    line-height: 2;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.new-playlist .fa-plus-square {
+    font-size: 2.5rem;
+    vertical-align: middle;
+    padding-right: 2%;
+    color: rgb(102, 102, 102);
+}
+
+.new-playlist div {
+    overflow: auto;
+}
+
+.new-playlist div ul {
+    list-style-type: none;
+    margin-top: 2%;
+    /* height: fit-content;
+    max-height: 70%; */
+}
+
+.new-playlist div ul li a {
+    /* display: block; */
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 2.5;
+}
+
+/* hover on sections-navbar and new-playlist contents */
+.sections-navbar ul li a:hover, .new-playlist ul li a:hover, .new-playlist span:hover a, .new-playlist span:hover .fa-plus-square {
+    color: white;
 }
 
 /* main section */
@@ -199,21 +250,25 @@ body {
     position: relative;
 }
 
-.play {
-    color: white;
-    font-size: 3rem;
+.layer>div {
     display: none;
-    width: 100%;
-    height: 100%;
-    padding: 40%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.col:hover .play {
+.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col:hover .layer>div {
     display: block;
 }
 
