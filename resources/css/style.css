@@ -193,14 +193,15 @@ body {
     display: inline-block;
     white-space: nowrap;
     width: fit-content;
-    padding: 1% 5%;
-    margin: 2.2% 2.2%;
+    padding: 10px 60px;
+    margin: 32.80px 30px;
     border: 1px solid white;
     border-radius: 20px;
 }
 
 .upgrade>span:hover {
     font-size: 0.8rem;
+    margin: 32.40px 28px;
 }
 
 /* DESKTOP VERSION */
@@ -608,6 +609,11 @@ body {
 
     .main-section {
         width: calc(100% - 50px);
+    }
+
+    .upgrade {
+        width: calc(100% - 50px);
+        left: 50px;
     }
 
     .col {
