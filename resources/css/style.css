@@ -19,6 +19,8 @@ body {
 .navbar {
     width: 250px;
     background-color: #000;
+    overflow: hidden;
+    height: 100%;
 }
 
 .align-content {
@@ -64,6 +66,8 @@ body {
 /* new-playlist */
 .new-playlist {
     font-weight: bold;
+    height: calc(100vh - 400px);
+    overflow: hidden;
 }
 
 .new-playlist h3 {
@@ -89,7 +93,7 @@ body {
 
 .new-playlist div {
     overflow: auto;
-    max-height: calc(50vh - 71px)
+    max-height: 85%;
 }
 
 .new-playlist div ul {
