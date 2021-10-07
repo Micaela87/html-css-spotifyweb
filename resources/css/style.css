@@ -360,7 +360,7 @@ body {
 
 /* currently-playing */
 .currently-playing {
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
 }
@@ -485,7 +485,7 @@ body {
 
 /* other controls */
 .other-controls {
-    width: 15%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -494,7 +494,7 @@ body {
 }
 
 /* SPOTIFY-MD VERSION */
-@media screen and (min-width: 639px) and (max-width: 878px) {
+@media screen and (max-width: 878px) {
     .spotify-sections {
         width: 80%;
     }
@@ -513,11 +513,33 @@ body {
     }
 
     .controls {
-        width: 60%;
         font-size: 1rem;
     }
+}
 
-    .other-controls {
-        width: 20%;
+/* SPOTIFY-S VERSION */
+@media screen and (max-width: 640px) {
+    .col {
+        width: 165px;
+    }
+
+    .currently-playing img {
+        width: 35px;
+    }
+
+    .currently-playing .song-details {
+        margin-right: 1%;
+    }
+
+    .player-controls {
+        width: 45%;
+    }
+
+    .controls {
+        font-size: 0.9rem;
+    }
+
+    #play-icon {
+        font-size: 1.5rem;
     }
 }
